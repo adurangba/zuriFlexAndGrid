@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    height: 100vh;
+    padding: auto;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    background-color: #d8d6da;    
+}
+.container{
+    display: flex;
+    width: 80%;
+}
+.sedan,
+.luxury,
+.SUV{
+    width: 34.33%;
+    padding: 5%;
+    color: #ffffffbf;
+    line-height: 2;
+    /* font-size: 15px; */
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    cursor: pointer;
+}
+p.cars{
+    text-align: left;
+    font-size: 15px;
+}
+.sedan{
+    background-color: #e28525;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius:30px ;
+}
+.SUV{
+    background-color: #016972;
+}
+.luxury{
+    background-color: #00403f;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+p.head{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+button{
+    padding: 5% 10%;
+    margin: 40px 0 20px;
+    border-radius: 30px;
+    outline: 0;
+    border: 2px solid #fff;
+    font-size: 0.9rem;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+.sedan button{ 
+    color:#e28525;
+}
+.sedan button:hover{
+    border: 2px solid floralwhite;
+    color: floralwhite;
+    background-color: #e28525;
+}
+.SUV button{
+    color: #016972;
+}
+.SUV button:hover{
+    border: 2px solid floralwhite;
+    color: floralwhite;
+    background-color: #016972;
+}
+.luxury button{
+    color:#00403f
+}
+.luxury button:hover{
+    border: 2px solid floralwhite;
+    color: floralwhite;
+    background-color: #016972;
+}
+
+@media  screen and (max-width:600px){
+    .body{
+        height: fit-content;
+        padding: 3% 0;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sedan,
+    .SUV,
+    .luxury{
+        width: 80%;
+    }
+    .sedan{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 30px;
+    }
+    .luxury{
+        background-color: #00403f;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+    }    
+}
